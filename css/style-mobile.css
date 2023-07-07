@@ -1,0 +1,314 @@
+/*랩탑*/
+@media (max-width: 1023px){
+    .header_inner{
+        display: none;
+    }
+    .m_header_inner{
+        display: block;
+    }
+    .call{
+        display: none;
+    }
+    .m_call{
+        display: block;
+    }
+    .b_1023{
+        display: block;
+    }
+    .pop .layerBox{
+        top:40%;
+    }
+    .pro_inner{
+        margin: 150px auto;
+    }
+    .filter ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .tabnav li{
+        width: 19%;
+        margin: 0 0.5% 1%;
+    }
+    .probox{
+        width: 45%;
+        margin: 0 2.5%;
+    }
+    #sns{
+        height: 700px;
+        margin-bottom: 100px;
+    }
+    .map_section div:nth-child(1){
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+    .map_section div:nth-child(2){
+        margin-left: 150px;
+        margin-top: -75px;
+    }
+    .map_section div:nth-child(3){
+        margin-left: 100px;
+        margin-top: -100px;
+    }
+    .map_ul_left{
+        margin-left: 50px;
+        margin-top: -150px;
+    }
+    .map_ul_right{
+        margin-left: 150px;
+        margin-top: -150px;
+    }
+}
+
+/*모바일*/
+@media (max-width: 767px){
+    .logo{
+        padding: 20px 10px;
+    }
+    .logo img{
+        transform: scale(0.8);
+    }
+    .nav> li> a{
+        width: 100px;
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+    .sub{
+        top: 0;
+        left: 129px;
+    }
+    .sub li a{
+        width: 100px;
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+    .br_767{
+        display: block;
+    }
+    .pop .layerBox{
+        width: 80%;
+        top: 10%;
+        transform:translate(-50%, 0);
+    }
+    .pop .layerBox .cont a img{
+        width: 2000px;
+    }
+    .pop .layerBox .btnTodayHide{
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+    .btnTodayHide> label{
+        vertical-align:-1px
+    }
+    .pop .layerBox .btnTodayHide label{
+        margin-left: 5px;
+    }
+    #chkday{
+        width:15px;
+        height:15px;
+        vertical-align:text-top
+    }
+    .pop .layerBox .btnClose a{
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+    .swiper-slide a:nth-child(1){
+        display: none;
+    }
+    .swiper-slide a:nth-child(2){
+        display: block;
+    }
+    section{
+        margin-left: 0%;
+    }
+    #best{
+        margin: 150px auto 100px;
+    }
+    .best_inner{
+        margin: 0 auto;
+    }
+    .best_box{
+        width: 23%;
+        margin: 0 1% 5%;
+    }
+    .best_box a p{
+        font-size: 14px;
+    }
+    #event{
+        padding: 0;
+    }
+    .plus{
+        margin-top: -50px;
+    }
+    .event_wrap{
+        justify-content: space-between;
+        padding: 10% 0 40%;
+    }
+    .ev_box{
+        width: 48%;
+        margin: 0;
+        margin-bottom: 4%;
+    }
+    #sns{
+        height: 100%;
+        margin: 100px auto 200px;
+    }
+    .sns_wrap{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 100px auto 0;
+    }
+    .sns_box img:nth-child(1){
+        display: none;
+    }
+    .sns_box img:nth-child(2){
+        display: block;
+    }
+    .sns_box{
+        width: 40%;
+        margin: 0 auto 20%;
+    }
+    .sns_box:nth-child(3), .sns_box:nth-child(4){
+        margin-bottom: 0;
+    }
+    .sns_box img{
+        width: 60%;
+        margin: auto;
+    }
+    #map{
+        margin: 0px auto 100px;
+    }
+    .map{
+        position: static;
+    }
+    iframe{
+        height: 300px;
+        margin-top: 180px;
+    }
+    .map_section{
+        position: static;
+    }
+    .map_section div:nth-child(1){
+        position: static;
+        margin: 0;
+    }
+    .map_section div:nth-child(2){
+        position: static;
+        margin: 0;
+    }
+    .map_section div:nth-child(3){
+        position: static;
+        margin: 0;
+    }
+    .map_section> div> h1{
+        font-size: 50px;
+    }
+    .map_section> div> h4{
+        font-size: 50px;
+    }
+    .map_ul_left{
+        position: static;
+        margin: 0;
+        float: left;
+        margin-top: 500px;
+        margin-left: 20%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .map_ul_right{
+        position: static;
+        margin: 0;
+        float: right;
+        margin-top: 500px;
+        margin-right: 20%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #map> .map_section> div> h1{
+        position: absolute;
+        top: -50px;
+        left: 10%;
+    }
+    #map> .map_section> div> h2{
+        position: absolute;
+        top: 40px;
+        left: 45%;
+    }
+    #map> .map_section> div> h4{
+        position: absolute;
+        top: 90px;
+        right: 10%;
+    }
+    .footer_inner p{
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer_inner img{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 549px){
+    #sns{
+        margin: 50px auto 100px;
+    }
+    #map> .map_section> div> h1{
+        left: 0;
+    }
+    .map_ul_left{
+        margin-left: 10%;
+    }
+    .map_ul_right{
+        margin-right: 10%;
+    }
+    .best_box a p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 399px){
+    .pop .layerBox .btnTodayHide{
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+    .btnTodayHide> label{
+        vertical-align:-1px
+    }
+    .pop .layerBox .btnTodayHide label{
+        margin-left: 5px;
+    }
+    #chkday{
+        width:13px;
+        height:13px;
+        vertical-align:text-top
+    }
+    .pop .layerBox .btnClose a{
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+    .best_box a p{
+        font-size: 10px;
+    }
+    .map_ul_left{
+        margin-left: 0;
+    }
+    .map_ul_right{
+        margin-right: 0;
+    }
+    .map_section> div> h1{
+        font-size: 40px;
+    }
+    .map_section> div> h4{
+        font-size: 40px;
+    }
+    .footer_inner p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .footer_inner img{
+        width: 40%;
+        max-width: 100%;
+    }
+}

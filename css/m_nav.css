@@ -1,0 +1,112 @@
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"]{
+	display:none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label{
+	display:block;
+	width:30px;
+	height:20px;
+	position:fixed;
+	left:30px;
+	top:30px;
+	z-index:3;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span{
+	background:#333;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span{
+	display:block;
+	position:absolute;
+	width:100%;
+	height:2px;
+	border-radius:30px;
+	background:#fff;
+	transition:all 0.5s;
+}
+input[id="menuicon"]+label span:nth-child(1){
+	top:0;
+}
+input[id="menuicon"]+label span:nth-child(2){
+	top:50%;
+	transform:translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+	bottom:0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked+label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked+label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+
+
+/*메뉴 창*/
+.sidebar{
+	width:100%;
+	height:100%;
+	background:#f8c9c9;
+    color: #fff;
+	position:fixed;
+	top:0;
+	left:-100%;
+	z-index:2;
+	transition:all 0.3s;
+}
+input[id="menuicon"]:checked+label+div{
+	left:0;
+}
+
+
+
+.m_header_inner{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 90px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.m_header_inner.active{
+    background: rgba(255, 255, 255, 0.8);
+}
+.m_header_inner.active input[id="menuicon"]+label span{
+    background: #333;
+}
+input[id="menuicon"]:checked .m_logo{
+    background: url(../images/m_logo1.png);
+}
+.m_header_inner.active .m_logo{
+    background: url(../images/m_logo1.png);
+}
+.m_header_inner.active .nav li a{
+    color: #333;
+}
+.m_logo{
+    display: block;
+    position: absolute;
+    width: 165px;
+    height: 45px;
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5px;
+	margin-left: -82.5px;
+    background: url(../images/m_logo.png);
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+}
+.m_sub{
+	display: none;
+}
+.m_nav li a{
+	color: #fff;
+	font-size: 20px;
+}

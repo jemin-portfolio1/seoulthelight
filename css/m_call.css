@@ -1,0 +1,138 @@
+/*움직이는 메뉴버튼*/
+
+input[id="m_menuicon"]{
+	display:none;
+}
+
+.m_top{
+    background: #de8d8b;
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.m_top a{
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left: 50%;
+    margin-left: -15px;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="m_menuicon"]+label{
+	display:block;
+	width:30px;
+	height:20px;
+	position:fixed;
+	right:30px;
+	bottom:30px;
+    background: #333;
+    padding: 15px 10px;
+    border-radius: 50%;
+	z-index:3;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="m_menuicon"]:checked+label span{
+	background:#333;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="m_menuicon"]+label span:nth-child(1){
+	display:block;
+	position:absolute;
+	width:20px;
+	height:2px;
+	border-radius:30px;
+	background:#fff;
+	transition:all 0.5s;
+}
+input[id="m_menuicon"]+label span:nth-child(2){
+	display:block;
+	position:absolute;
+	width: 2px;
+	height:20px;
+	border-radius:30px;
+	background:#fff;
+	transition:all 0.5s;
+}
+input[id="m_menuicon"]+label span:nth-child(1){
+	top:50%;
+    left: 50%;
+    margin-left: -10px;
+    transform:translateY(-50%);
+}
+input[id="m_menuicon"]+label span:nth-child(2){
+	left:50%;
+	margin-left: -1px;
+    top:50%;
+	transform:translateY(-50%);
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="m_menuicon"]:checked+label {transform: rotate(45deg);}
+
+/*메뉴 창*/
+.m_sidebar{
+	width:200px;
+	background:#333;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+	position:fixed;
+	bottom: 30px;
+	right:-100%;
+	z-index:2;
+	transition:all 0.3s;
+}
+input[id="m_menuicon"]:checked+label+div{
+	right: 110px;
+}
+
+.m_sidebar ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+.m_sidebar ul li{
+    float: left;
+}
+.m_sidebar ul li img{
+    display: block;
+}
+.m_sidebar ul li a{
+    color: #fff;
+}
+
+@media (max-width: 399px){
+	.m_sidebar{
+		width:150px;
+		padding: 10px 20px;
+		bottom: 10px;
+		right:-100%;
+		z-index:2;
+		transition:all 0.3s;
+	}
+	.m_top{
+		right: 10px;
+		bottom: 70px;
+	}
+	input[id="m_menuicon"]+label{
+		right:10px;
+		bottom:10px;
+	}
+	input[id="m_menuicon"]:checked+label+div{
+		right: 70px;
+		bottom:10px;
+	}
+}

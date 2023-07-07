@@ -1,0 +1,158 @@
+/*서울더빛소개*/
+
+#sub_banner{
+    padding: 300px 0 0;
+    background: url(../images/sub1_main.jpg) no-repeat center top fixed;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/*메뉴*/
+#s1tab{
+    width: 1400px;
+    margin: 100px auto;
+}
+#s1tab ul{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#s1tab ul li{
+    float: left;
+}
+#s1tab ul li a{
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 30px;
+    display: block;
+    font-size: 20px;
+}
+#s1tab ul li .on, #s1tab ul li:hover a{
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*본문*/
+.s1main_inner{
+    width: 1000px;
+    margin: 200px auto 300px;
+}
+.s1main_inner ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.s1main_inner ul li{
+    float: left;
+    width: 49%;
+}
+.s1main_inner ul li a{
+    display: block;
+}
+.s1main_inner ul li a img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.br_767{
+    display: none;
+}
+.br_399{
+    display: none;
+}
+
+@media (max-width: 1399px){
+    #sub_banner{
+        padding-top: 200px;
+    }
+    #s1tab{
+        width: 100%;
+    }
+    #s1tab ul{
+        width: 800px;
+    }
+    .s1main_inner{
+        width: 80%;
+        margin: 150px auto 200px;
+    }
+}
+
+@media (max-width: 1023px){
+    #s1tab{
+        margin: 100px auto 50px;
+    }
+    #s1tab ul{
+        width: 550px;
+    }
+    #s1tab ul li a{
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    .s1main_inner{
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 767px){
+    #s1tab{
+        margin: 50px auto;
+    }
+    #s1tab ul{
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: space-around;
+    }
+    #s1tab ul li{
+        width: 40%;
+        margin: 0 1% 5% 0;
+    }
+    #s1tab ul li a{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    .s1main_inner{
+        width: 70%;
+        margin: 50px auto 100px;
+    }
+    .s1main_inner ul{
+        flex-wrap: wrap;
+    }
+    .s1main_inner ul li{
+        width: 70%;
+        margin: auto;
+    }
+    .s1main_inner ul li:nth-child(1){
+        margin-bottom: 10%;
+    }
+    .br_767{
+        display: block;
+    }
+}
+
+@media (max-width: 499px){
+    #sub_banner{
+        padding-top: 150px;
+    }
+    #s1tab{
+        margin: 10px auto;
+    }
+    #s1tab ul li{
+        width: 45%;
+    }
+    #s1tab ul li a{
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 399px){
+    .br_399{
+        display: block;
+    }
+    #s1tab ul li .padding{
+        padding: 14px 0;
+    }
+}

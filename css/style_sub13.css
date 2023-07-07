@@ -1,0 +1,308 @@
+/*서울더빛소개*/
+
+#sub_banner{
+    padding: 300px 0 0;
+    background: url(../images/sub1_main.jpg) no-repeat center top fixed;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/*메뉴*/
+#s1tab{
+    width: 1400px;
+    margin: 200px auto 100px;
+}
+#s1tab ul{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#s1tab ul li{
+    float: left;
+}
+#s1tab ul li a{
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 30px;
+    display: block;
+    font-size: 20px;
+}
+#s1tab ul li .on{
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+}
+#s1tab ul li:hover a{
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*본문*/
+.s1main_inner{
+    margin: 400px auto 0;
+}
+.doctor{
+    height: 700px;
+    background: #daa6a2;
+}
+.doctor:nth-child(1){
+    margin-bottom: 500px;
+}
+.doctor_box{
+    width: 1400px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+}
+.doctor_txt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+.doctor_txt h1, .doctor_txt1 h1{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+.mark{
+    display: inline !important;
+    box-shadow: inset 0 -0.65em 0 rgba(255, 255, 255, 0.3);
+}
+.doctor_txt h2, .doctor_txt1 h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.doctor_txt h2 b, .doctor_txt1 h2 b{
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.doctor_txt p, .doctor_txt1 p{
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.doctor_img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.doctor_img img, .doctor_img1 img{
+    display: block;
+    width: 600px;
+    max-width: 100%;
+}
+.doctor_txt1{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    color: #fff;
+    text-align: right;
+}
+.doctor_img1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.br_499{
+    display: none;
+}
+
+@media (max-width: 1399px){
+    #sub_banner{
+        padding-top: 200px;
+    }
+    #s1tab{
+        width: 100%;
+        margin: 100px auto 0;
+    }
+    #s1tab ul{
+        width: 800px;
+    }
+    .s1main_inner{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .doctor:nth-child(1){
+        margin-bottom: 300px;
+    }
+    .doctor{
+        height: 600px;
+    }
+    .doctor_box{
+        width: 80%;
+        height: 600px;
+    }
+    .doctor_img img, .doctor_img1 img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1023px){
+    #s1tab{
+        margin: 100px auto 50px;
+    }
+    #s1tab ul{
+        width: 550px;
+    }
+    #s1tab ul li a{
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    .s1main_inner{
+        margin: 200px auto 0;
+    }
+    .doctor, .doctor_box{
+        height: 400px;
+    }
+    .doctor_img img, .doctor_img1 img{
+        width: 350px;
+    }
+    .doctor_txt h1, .doctor_txt1 h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .doctor_txt h2, .doctor_txt1 h2{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .doctor_txt h2 b, .doctor_txt1 h2 b{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .doctor_txt p, .doctor_txt1 p{
+        margin-bottom: 15px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    #s1tab{
+        margin: 20px auto;
+    }
+    #s1tab ul{
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: space-around;
+    }
+    #s1tab ul li{
+        width: 40%;
+        margin: 0 1% 5% 0;
+    }
+    #s1tab ul li a{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    .s1main_inner{
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    .doctor:nth-child(1) {
+        margin-bottom: 100px;
+    }
+    .doctor_img img{
+        width: 250px;
+    }
+    .doctor_img1 img{
+        width: 230px;
+    }
+}
+
+@media (max-width: 599px){
+    .doctor_box{
+        width: 90%;
+    }
+    .doctor_img img{
+        width: 200px;
+    }
+    .doctor_img1 img{
+        width: 190px;
+    }
+}
+
+@media (max-width: 499px){
+    #sub_banner{
+        padding-top: 150px;
+    }
+    #s1tab{
+        margin: 10px auto;
+    }
+    #s1tab ul li{
+        width: 45%;
+    }
+    #s1tab ul li a{
+        line-height: 18px;
+    }
+    .doctor, .doctor_box{
+        height: 250px;
+    }
+    .doctor_txt h1, .doctor_txt1 h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .doctor_txt h2, .doctor_txt1 h2{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .doctor_txt h2 b, .doctor_txt1 h2 b{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .doctor_txt p, .doctor_txt1 p{
+        margin-bottom: 10px;
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .doctor_txt1{
+        top: 0px;
+    }
+    .br_499{
+        display: block;
+    }
+    #s1tab ul li .padding{
+        padding: 14px 0;
+    }
+}
+
+@media (max-width: 399px){
+    .doctor_box{
+        width: 96%;
+    }
+    .doctor_img img{
+        width: 150px;
+    }
+    .doctor_img1 img{
+        width: 140px;
+    }
+    .doctor, .doctor_box{
+        height: 250px;
+    }
+    .doctor_txt h1, .doctor_txt1 h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .doctor_txt h2, .doctor_txt1 h2{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .doctor_txt h2 b, .doctor_txt1 h2 b{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .doctor_txt p, .doctor_txt1 p{
+        margin-bottom: 10px;
+        line-height: 12px;
+        font-size: 5px;
+    }
+    .doctor_txt1{
+        top: 20px;
+    }
+}

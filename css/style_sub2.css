@@ -1,0 +1,43 @@
+/*줄기세포*/
+
+/*본문*/
+.s2main_inner{
+    width: 1000px;
+    margin: 200px auto;
+}
+.s2main_inner img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.br_499{
+    display: none;
+}
+
+@media (max-width: 1399px){
+    .s2main_inner{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1023px){
+    .s2main_inner{
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 767px){
+    .s2main_inner{
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 499px){
+    .s2main_inner{
+        margin: 30px auto;
+    }
+    .br_499{
+        display: block;
+    }
+}
